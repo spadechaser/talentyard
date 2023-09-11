@@ -1,34 +1,29 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export async function POST() {
+export async function POST(request) {
   try {
-    // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
-      service: process.env.EMAIL_SERVICE_PROVIDER, // e.g., 'Gmail', 'Yahoo', etc.
+      service: process.env.NEXT_PUBLIC_SERVICE_PROVIDER,
       auth: {
-        user: process.env.EMAIL,
-        pass: process.env.EMAIL_PASSWORD,
+        user: process.env.NEXT_PUBLIC_EMAIL,
+        pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
       },
     });
 
-    // Extract email data from the request body
-    const { to, subject, html } = NextRequest.body;
+    const { to, subject, html } = await request.json();
 
-    // Define the email message
     const mailOptions = {
-      from: "your-email@example.com",
+      from: process.env.NEXT_PUBLIC_SENDER_EMAIL,
       to,
       subject,
       html,
     };
 
-    // Send the email
     await transporter.sendMail(mailOptions);
 
     NextResponse.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
-    console.error("Error sending email:", error);
     NextResponse.status(500).json({ error: "Error sending email" });
   }
 }
