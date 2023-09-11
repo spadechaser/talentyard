@@ -21,7 +21,28 @@
       div,
       h1,
       p {
-        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Lexend', sans-serif;
+      }
+
+      @media only screen and (min-width: 650px) {
+        table {
+          width: 620px !important;
+        }
+      }
+
+      @media only screen and (max-width: 420px) {
+        div {
+          font-size: 28px !important;
+        }
+        h1 {
+          font-size: 18px !important;
+        }
+        h2 {
+          font-size: 16px !important;
+        }
+      }
+      p {
+        font-size: 14px !important;
       }
     </style>
   </head>
@@ -31,7 +52,7 @@
       align="center"
       style="
         background-color: #fffffe;
-        width: 620px;
+        width: 100%;
         border-collapse: collapse;
         border: 1px solid #d1d1e9;
         border-spacing: 0;
@@ -40,14 +61,14 @@
       <tr>
         <td
           align="center"
-          style="padding: 30px 10px; background-color: #6246ea"
+          style="padding: 30px 10px; background-color: #0066c5"
         >
           <span
             style="
               color: #fffffe;
               font-size: 42px;
               font-weight: 700;
-              font-family: 'Comfortaa', cursive;
+              font-family: 'Lexend', sans-serif;
             "
             >talentyard</span
           >
@@ -55,7 +76,14 @@
       </tr>
       <tr>
         <td align="center" style="padding: 10px 10px">
-          <h1 style="font-size: 24px; color: #6246ea; font-weight: 700">
+          <h1
+            style="
+              font-size: 24px;
+              color: #0066c5;
+              font-weight: 400;
+              font-family: 'Lexend', sans-serif;
+            "
+          >
             Welcome onboard {{name}}
           </h1>
         </td>
@@ -79,7 +107,7 @@
       </tr>
       <tr>
         <td align="center" style="padding: 0 20px; color: #535356">
-          <h2 style="padding: 0; font-size: 20px; font-weight: 700">
+          <h2 style="padding: 0; font-size: 20px; font-weight: 400">
             Complete your Profile
           </h2>
           <p style="padding: 0 0 10px 0">
@@ -88,12 +116,14 @@
           <button
             style="
               font-size: 18px;
-              background-color: #6246ea;
+              background-color: #0066c5;
               color: #fffffe;
               font-weight: 400;
+              font-family: 'Lexend', sans-serif;
               width: 200px;
               border: none;
-              padding: 12px 10px;
+              padding: 15px 10px;
+              margin: 10px 0;
             "
           >
             complete profile
@@ -109,41 +139,22 @@
         </td>
       </tr>
       <tr>
-        <td align="center" style="padding: 10px 20px; color: #7f7f8e">
-          <p
-            style="
-              padding: 0 0 10px 0;
-              font-family: 'Pacifico', cursive;
-              font-size: 20px;
-            "
-          >
-            team talentyard
-          </p>
-        </td>
-      </tr>
-      <tr>
         <td
           align="center"
-          style="padding: 10px 20px; background-color: #6e54f1"
+          style="padding: 10px 20px; background-color: #0066c5"
         >
           <span
             style="
               color: #fffffe;
               font-size: 14px;
               font-weight: 700;
-              font-family: 'Comfortaa', cursive;
+              font-family: 'Lexend', sans-serif;
             "
           >
             talentyard |
           </span>
-          <span style="color: #fffffe; font-size: 14px; font-weight: 700"
-            >Abuja |
-          </span>
-          <span style="color: #fffffe; font-size: 14px; font-weight: 700"
-            >Lagos
-          </span>
-          <span style="padding: 0; display: block">
-            <a style="color: #fffffe; font-size: 14px" href="#">Unsubscribe</a>
+          <span style="color: #fffffe; font-size: 14px; font-weight: 700">
+            United States
           </span>
         </td>
       </tr>
