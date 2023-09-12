@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import handlebars from "handlebars";
+import fs from "fs/promises";
 
 export async function POST(request) {
   try {
@@ -11,7 +13,12 @@ export async function POST(request) {
       },
     });
 
-    const { to, subject, html } = await request.json();
+    const { to, subject, body } = await request.json();
+    const templatePath = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_PATH;
+    const emailTemplate = await fs.readFile(templatePath, "utf8");
+
+    const compiledTemplate = handlebars.compile(emailTemplate);
+    const html = compiledTemplate({ subject, body });
 
     const mailOptions = {
       from: process.env.NEXT_PUBLIC_SENDER_EMAIL,
