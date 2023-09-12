@@ -11,8 +11,7 @@ export default function Hero() {
                 <div className='h-[300px] w-[600px] bg-neutral z-10 mt-24 hidden lg:flex'>
                 </div>
                 <button className='bg-primary text-neutral p-3 mt-24 lg:mt-0 rounded-default text-xl z-10'>Hire from Talentyard</button>
-                
-            </div>
+                </div>
         </div>
     )
 }
