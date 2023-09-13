@@ -55,6 +55,26 @@ A PR should request a reviewer once ready for review
 The naming convention for PRs would be
 `[category]-[name]:[title of tasks]`. category could be Feature, Bug-Fix, Documentations. E.g. Feature-Praise:authentication-context-proviver
 
+### Using Storybook
+To enhance the development experience and streamline component testing, we have integrated Storybook into this project. Follow these steps to get started with Storybook:
+
+Ensure you have Node.js and npm installed on your system.
+
+Install Storybook globally (if not already installed) using npm:
+
+Run
+`npm install` 
+
+In the development directory of the project, run the following command to start Storybook:
+
+`npm run storybook`
+
+Storybook will start running at http://localhost:6006 by default. You can access it in your web browser.
+
+Create .stories.js files in your component directories to document and visualize your components in Storybook.
+
+
+
 ### TEAM
 
 - [Augustine](https://github.com/annonymousauthority) - Owner
