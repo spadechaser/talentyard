@@ -60,12 +60,13 @@ To enhance the development experience and streamline component testing, we have 
 
 Ensure you have Node.js and npm installed on your system.
 
-Install Storybook globally (if not already installed) using npm:
+Install Storybook globally using npm (already listed as a dev dependency)
 
-Run
+- Cd to `developers`
+- Run
 `npm install` 
 
-In the development directory of the project, run the following command to start Storybook:
+- In the development directory of the project, run the following command to start Storybook:
 
 `npm run storybook`
 
@@ -83,8 +84,9 @@ You'll see a list of components, including "Button."
 ### Unit Testing with Jest
 Jest is a JavaScript testing framework commonly used for unit testing. To get started with Jest in this app, follow these steps:
 
-Install Jest as a development dependency(Its already added to package.json file) 
+Install Jest as a development dependency (already listed as a dev dependency) 
 
+- Cd to `developers`
 - Run 
 `npm install` 
 
@@ -99,8 +101,9 @@ Install Jest as a development dependency(Its already added to package.json file)
 ### End-to-End Testing with Cypress
 Cypress is a modern end-to-end testing framework for web applications. To get started with Cypress in your app, follow these steps:
 
-Install Cypress as a development dependency(Its already added to package.json file) 
+Install Cypress as a development dependency (already listed as a dev dependency) 
 
+- Cd to `developers`
 - Run 
 `npm install` 
 - Create Cypress test files in the developers/cypress/e2e directory. For example, you can create a login.cy.js file to test the login functionality.
