@@ -21,7 +21,8 @@ module.exports = {
         'neutral':'#F5F5F5'
       },
       borderRadius: {
-        'default': '12px'
+        'default': '12px',
+        'large': '45px'
       },
       fontSize:{
         '24':'24px'
