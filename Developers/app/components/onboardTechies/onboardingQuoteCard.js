@@ -3,7 +3,7 @@ import React from "react";
 
 function OnboardingQuoteCard() {
   return (
-    <div className="md:w-9/12 w-10/12 mx-auto px-4 pt-4 pb-8 bg-dark rounded-3xl">
+    <div className="max-w-[22rem] md:max-w-md mx-auto px-4 pt-4 pb-8 bg-dark rounded-3xl">
       <p className="text-white text-xl md:text-3xl font-semibold">
         TalentYard is a <span className="text-accentSecondary">playground</span>{" "}
         for innovative talents
