@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Hero from "./components/landingpage/Hero";
-import { Lexend } from 'next/font/google'
+import { Lexend } from "next/font/google";
 import NavBar from "./components/landingpage/NavBar";
 import TalentPromptSearch from "./components/landingpage/TalentPromptSearch";
 import VettedTalentsCategory from "./components/landingpage/VettedTalentsCategory";
@@ -9,7 +9,10 @@ import Features from "./components/landingpage/Features";
 import HoverFrameCTA from "./components/HoverFrameCTA_comp";
 import { useEffect, useState } from "react";
 
-const lexend = Lexend({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] });
+const lexend = Lexend({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 export default function Home() {
   const [showHoverFrame, setShowHoverFrame] = useState(false);
 
@@ -22,15 +25,18 @@ export default function Home() {
 
       const threshold = 100;
 
-      if (scrollPosition > middleScrollPosition - threshold && scrollPosition < middleScrollPosition + threshold) {
+      if (
+        scrollPosition > middleScrollPosition - threshold &&
+        scrollPosition < middleScrollPosition + threshold
+      ) {
         setShowHoverFrame(true);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
@@ -38,7 +44,7 @@ export default function Home() {
       {showHoverFrame && <HoverFrameCTA />}
       <NavBar />
       <Hero />
-      <div className="mt-12 md:mt-0 z-10 relative font-lexend">
+      <div className="mt-12 md:mt-0 z-10 relative">
         <TalentPromptSearch />
       </div>
       <div className="mt-12 md:mt-24 z-10 relative">
