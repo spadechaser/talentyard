@@ -10,7 +10,7 @@ const info = {
 export default function JoinWaitlistCard() {
   return (
     <div className="flex flex-col items-center justify-center mx-auto">
-      <div className="w-[612px] h-[400px] bg-slate-100 rounded-3xl mx-auto overflow-hidden">
+      <div className="min-h-[400px] bg-slate-100 rounded-3xl mx-auto overflow-hidden">
         <h1 className="font-lexend text-[52px] text-center mt-[35.5px] font-semibold text-slate-950">
           {info["title"]}
         </h1>
