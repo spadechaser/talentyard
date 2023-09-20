@@ -36,7 +36,7 @@ function PasswordInput() {
   const ruleText = "text-xs font-light leading-none tracking-tight";
   return (
     <div
-      className={`${lexend.className} relative w-full max-sm:px-3 sm:w-[428px] mx-auto pt-8 space-y-[14px]`}
+      className={`${lexend.className} relative w-full max-sm:px-3 sm:px-[20%] xl:px-[30%] mx-auto pt-8 space-y-[14px]`}
     >
       <input
         type="password"
