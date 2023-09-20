@@ -38,7 +38,7 @@ export default function Home() {
       {showHoverFrame && <HoverFrameCTA />}
       <NavBar />
       <Hero />
-      <div className="mt-12 md:mt-0 z-10 relative">
+      <div className="mt-12 md:mt-0 z-10 relative font-lexend">
         <TalentPromptSearch />
       </div>
       <div className="mt-12 md:mt-24 z-10 relative">
