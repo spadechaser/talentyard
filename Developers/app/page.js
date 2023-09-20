@@ -6,7 +6,7 @@ import NavBar from "./components/landingpage/NavBar";
 import TalentPromptSearch from "./components/landingpage/TalentPromptSearch";
 import VettedTalentsCategory from "./components/landingpage/VettedTalentsCategory";
 import Features from "./components/landingpage/Features";
-import HoverFrameCTA from "./components/HoverFrameCTA_comp";
+import HoverFrameCTA from "./components/landingpage/HoverFrameCTA_comp";
 import { useEffect, useState } from "react";
 
 const lexend = Lexend({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] });

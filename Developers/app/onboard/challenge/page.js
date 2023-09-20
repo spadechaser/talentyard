@@ -6,7 +6,7 @@ const lexend = Lexend({ weight: ["100", "200", "300", "400", "500", "600", "700"
 export default function OnboardChallengePath() {
     return (
         <div className={lexend.className}>
-            <div className='flex flex-col h-screen w-full justify-center items-center space-y-12'>
+            <div className='flex flex-col h-screen w-full justify-center items-center space-y-12 p-4'>
                 <div className='w-full mx-auto'>
                     <h1 className='font-sans text-4xl text-center font-bold'>Choose Evaluation Path</h1>
                 </div>
