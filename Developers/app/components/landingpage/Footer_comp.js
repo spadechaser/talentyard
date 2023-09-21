@@ -13,25 +13,20 @@ function Footer() {
             height={120}
             alt='talentyard logo'
           />
-          <span className='text-base leading-normal text-white sm:text-lg lg:text-2xl'>
+          <span className='text-lg leading-normal text-white'>
             &copy; &nbsp; 2023
           </span>
+          <a className='block md:hidden' href='https://www.twitter.com/_talentyard'>
+            <Image src='/x-logo-white.png' width={20} height={20} alt='x logo' />
+          </a>
         </div>
         <div className='items-center justify-around flex-1 hidden w-full md:flex'>
-          <span className='text-base leading-3 text-white lg:text-2xl'>
+          <span className='text-base leading-3 text-white'>
             Achieving innovation through collaboration
           </span>
-          <span className=''>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='30'
-              height='30'
-              viewBox='0 0 30 30'
-              fill='none'
-            >
-              <circle cx='15' cy='15' r='15' fill='#D9D9D9' />
-            </svg>
-          </span>
+          <a href='https://www.twitter.com/_talentyard'>
+            <Image src='/x-logo-white.png' width={20} height={20} alt='x logo' />
+          </a>
         </div>
       </div>
     </footer>

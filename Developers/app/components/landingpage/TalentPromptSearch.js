@@ -8,7 +8,7 @@ export default function TalentPromptSearch() {
             <div className='w-full flex flex-col lg:flex-row space-y-4'>
                 <form className='rounded-large flex  w-full h-[80px] shadow-lg bg-neutral px-4 space-y-4'>
                     <div className='flex w-full items-center justify-between '>
-                        <input placeholder='What would you like to achieve?' className='flex w-3/4 rounded-large bg-neutral focus:outline-none p-3 font-light' />
+                        <input placeholder='What would you like to achieve?' className='flex w-3/4  lg:rounded-large bg-neutral focus:outline-none p-3 font-light' />
                         <button type='submit' className='hidden lg:block bg-accent text-neutral hover:bg-accentSecondary p-3 rounded-default'>Search for Talent</button>
                     </div>
                 </form>

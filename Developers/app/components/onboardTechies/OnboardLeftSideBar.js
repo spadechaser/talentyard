@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import OnboardingQuoteCard from './onboardingQuoteCard'
 
 export default function OnboardLeftSideBar() {
     return (
@@ -9,6 +10,7 @@ export default function OnboardLeftSideBar() {
                 <h1 className='text-4xl lg:text-5xl text-white w-full leading-snug font-semibold'>Job <span className='text-secondary'>Opportunities</span> in Exciting Projects</h1>
             </div>
             <div>
+                <OnboardingQuoteCard />
             </div>
             <div></div>
         </div>

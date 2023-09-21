@@ -35,7 +35,6 @@ export default function NavBar({ authenticated }) {
                         <div className="flex h-16 justify-between">
                             <div className="flex">
                                 <div className="-ml-2 mr-2 flex items-center md:hidden">
-                                    {/* Mobile menu button */}
                                     <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                         <span className="absolute -inset-0.5" />
                                         <span className="sr-only">Open main menu</span>
@@ -71,9 +70,9 @@ export default function NavBar({ authenticated }) {
                                 </div>
                             </div>
                             <div className="flex items-center space-x-6">
-                                <div className="flex-shrink-0 hidden md:flex">
+                                <div className="flex-shrink-0 ">
                                     <Link
-                                        href={"/"}
+                                        href={"/onboard"}
                                         className="relative inline-flex items-center gap-x-1.5 rounded-md px-3 py-2 text-base text-black font-normal hover:underline hover:text-accentSecondary hover:underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-none"
                                     >
 
@@ -88,7 +87,7 @@ export default function NavBar({ authenticated }) {
                                         Hire from Talentyard
                                     </button>
                                 </div>
-                                <div className="flex-shrink-0">
+                                <div className="flex-shrink-0 hidden md:flex">
                                     <button
                                         type="button"
                                         className="relative inline-flex items-center gap-x-1.5 rounded-md bg-neutral px-3 py-2 text-base font-normal text-black border-accent border-2 hover:bg-gray-200 hover:border-accentSecondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral"
@@ -164,7 +163,7 @@ export default function NavBar({ authenticated }) {
                                 </Disclosure.Button>
                             ))}
                         </div>
-                        {!authenticated && <div className="border-t border-gray-700 pb-3 pt-4">
+                        {authenticated && <div className="border-t border-gray-700 pb-3 pt-4">
                             <div className="flex items-center px-5 sm:px-6">
                                 <div className="flex-shrink-0">
                                     <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />

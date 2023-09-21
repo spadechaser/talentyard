@@ -8,6 +8,7 @@ import VettedTalentsCategory from "./components/landingpage/VettedTalentsCategor
 import Features from "./components/landingpage/Features";
 import HoverFrameCTA from "./components/landingpage/HoverFrameCTA_comp";
 import { useEffect, useState } from "react";
+import Footer from "./components/landingpage/Footer_comp";
 
 const lexend = Lexend({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -41,7 +42,9 @@ export default function Home() {
   }, []);
   return (
     <main className={lexend.className}>
-      {showHoverFrame && <HoverFrameCTA />}
+      {showHoverFrame && <HoverFrameCTA closeHoverFrame={()=>{
+        setShowHoverFrame(false)
+      }} />}
       <NavBar />
       <Hero />
       <div className="mt-12 md:mt-0 z-10 relative">
@@ -53,6 +56,7 @@ export default function Home() {
       <div className="mt-12 md:mt-24 z-10 relative">
         <VettedTalentsCategory />
       </div>
+      <Footer />
     </main>
   );
 }

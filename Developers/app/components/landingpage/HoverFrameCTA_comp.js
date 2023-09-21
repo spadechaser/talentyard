@@ -27,11 +27,17 @@ const frame = [
   },
 ];
 
-export default function HoverFrameCTA() {
+export default function HoverFrameCTA({closeHoverFrame}) {
   return (
-    <div className="flex flex-col mx-auto fixed bottom-16 right-16 rounded-3xl w-[320px] h-[390px] drop-shadow-2xl hover:opacity-70 z-50">
+    <div className="hidden lg:flex flex-col mx-auto fixed bottom-16 right-16 rounded-3xl w-[320px] h-[390px] drop-shadow-2xl  z-50">
       <div className="relative [background:linear-gradient(180deg,_#4d90db,_#0066c5_23.27%,_#004b9b)] rounded-t-3xl flex-1">
-        <h1 className="mt-[51px] text-center text-slate-100 text-[34px] font-bold font-lexend my-auto">
+        <button type="button" onClick={closeHoverFrame} className="flex w-full justify-end items-center p-6 pb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-white hover:text-accentSecondary">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+
+        </button>
+        <h1 className=" text-center text-slate-100 text-[34px] font-bold font-lexend my-auto">
           Join Talentyard
         </h1>
         <div className="mt-[10px] flex items-center justify-center space-x-[34px] object-contain mb-[10px]">
@@ -54,9 +60,9 @@ export default function HoverFrameCTA() {
           </p>
         </div>
         <div className="flex items-center justify-center mt-[37px] mb-[28px]">
-          <button className="px-6 py-2 bg-[#0066C5] text-slate-100 font-lexend rounded-xl text-center hover:opacity-70">
+          <a href="/onboard" className="px-6 py-2 bg-primary text-slate-100 font-lexend rounded-xl text-center hover:bg-dark">
             Apply now
-          </button>
+          </a>
         </div>
       </div>
     </div>
