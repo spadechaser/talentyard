@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import path from "path";
-import hbs from "nodemailer-express-handlebars";
+import hbs from 'handlebars/dist/handlebars.min.js';
+
 
 export async function POST(request) {
   try {
