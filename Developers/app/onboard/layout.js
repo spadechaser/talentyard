@@ -1,5 +1,5 @@
-import "./globals.css";
-import { lexend } from "./localFont";
+import "../globals.css";
+import { lexend } from "../localFont";
 
 export const metadata = {
   title: "Talentyard: Achieving Innovation through Collaboration",
@@ -8,8 +8,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${lexend.variable}`}>{children}</body>
-    </html>
+    <main className={`${lexend.variable}`}>{children}</main>
   );
 }
