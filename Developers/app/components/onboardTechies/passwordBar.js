@@ -36,7 +36,7 @@ function PasswordInput() {
   const ruleText = "text-xs font-light leading-none tracking-tight";
   return (
     <div
-      className={`${lexend.className} relative w-full max-sm:px-3 sm:px-[20%] xl:px-[30%] mx-auto pt-8 space-y-[14px]`}
+      className={`${lexend.className} relative w-full space-y-[14px]`}
     >
       <input
         type="password"
@@ -51,7 +51,7 @@ function PasswordInput() {
         }}
         onFocus={handleFocus}
         onBlur={handleBlur}
-        className="py-2 px-4 focus:outline-none bg-white rounded-[7px] w-full m-auto shadow border border-gray-200 text-black text-lg font-light leading-normal tracking-tight"
+        className="relative w-full cursor-default rounded-md bg-white pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-primary sm:text-sm sm:leading-6 p-3 placeholder:font-light placeholder:text-black"
       />
       {isFocused && (
         <div
@@ -63,39 +63,34 @@ function PasswordInput() {
           <div className="flex justify-between sm:pr-[41px]">
             <ul className="list-disc list-inside text-left space-y-3">
               <li
-                className={`${ruleText} ${
-                  hasMinLength ? "text-green-600" : "text-red-600"
-                }`}
+                className={`${ruleText} ${hasMinLength ? "text-green-600" : "text-red-600"
+                  }`}
               >
                 At least 8 characters
               </li>
               <li
-                className={`${ruleText} ${
-                  hasLowerCase ? "text-green-600" : "text-red-600"
-                }`}
+                className={`${ruleText} ${hasLowerCase ? "text-green-600" : "text-red-600"
+                  }`}
               >
                 Minimum 1 lowercase
               </li>
               <li
-                className={`${ruleText} ${
-                  hasSpecialChar ? "text-green-600" : "text-red-600"
-                }`}
+                className={`${ruleText} ${hasSpecialChar ? "text-green-600" : "text-red-600"
+                  }`}
               >
                 Minimum 1 special character
               </li>
             </ul>
             <ul className="list-disc list-outside text-left space-y-3">
               <li
-                className={`${ruleText} ${
-                  hasUpperCase ? "text-green-600" : "text-red-600"
-                }`}
+                className={`${ruleText} ${hasUpperCase ? "text-green-600" : "text-red-600"
+                  }`}
               >
                 Minimum 1 uppercase
               </li>
               <li
-                className={`${ruleText} ${
-                  hasNumber ? "text-green-600" : "text-red-600"
-                }`}
+                className={`${ruleText} ${hasNumber ? "text-green-600" : "text-red-600"
+                  }`}
               >
                 Minimum 1 number
               </li>
