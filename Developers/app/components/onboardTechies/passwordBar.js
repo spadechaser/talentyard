@@ -1,11 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Lexend } from "next/font/google";
-const lexend = Lexend({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
 
 function PasswordInput() {
   const [password, setPassword] = useState("");
@@ -36,7 +31,7 @@ function PasswordInput() {
   const ruleText = "text-xs font-light leading-none tracking-tight";
   return (
     <div
-      className={`${lexend.className} relative w-full space-y-[14px]`}
+      className={'relative w-full space-y-[14px]'}
     >
       <input
         type="password"
