@@ -39,7 +39,7 @@ export default function DataInputSelection({ data }) {
                                                 'relative cursor-default select-none py-2 pl-3 pr-9'
                                             )
                                         }
-                                        value={d.id}
+                                        value={d}
                                     >
                                         {({ selected, active }) => (
                                             <>
