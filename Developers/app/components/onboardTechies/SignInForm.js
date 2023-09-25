@@ -2,12 +2,6 @@
 
 import React, { useState } from "react";
 
-import { Lexend } from "next/font/google";
-const lexend = Lexend({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
-
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,9 +17,7 @@ function SignIn() {
   const handleForgotPassword = () => {};
 
   return (
-    <div
-      className={`${lexend.className} w-full max-w-xs sm:max-w-[608px] mx-auto mt-10 space-y-[33px]`}
-    >
+    <div className="w-full max-w-xs sm:max-w-[608px] mx-auto mt-10 space-y-[33px]">
       <h2 className="text-black text-[32px] font-normal leading-[41.92px] tracking-wide">
         Welcome back
       </h2>
@@ -43,7 +35,7 @@ function SignIn() {
             placeholder="Email"
             required
             onChange={(e) => setEmail(e.target.value)}
-            className="py-2 px-4 focus:outline-none bg-white rounded-[7px] w-full m-auto shadow border border-gray-200 text-black text-lg font-light leading-normal tracking-tight"
+            className="py-2 pl-4 focus:outline-none bg-white rounded-[7px] w-full m-auto border border-gray-200 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-primary sm:text-sm sm:leading-6 p-3 placeholder:font-light placeholder:text-black leading-normal tracking-tight"
           />
         </div>
         <div className="space-y-[19px]">
@@ -56,7 +48,7 @@ function SignIn() {
               placeholder="Password"
               required
               onChange={(e) => setPassword(e.target.value)}
-              className="py-2 px-4 focus:outline-none bg-white rounded-[7px] w-full m-auto shadow border border-gray-200 text-black text-lg font-light leading-normal tracking-tight"
+              className="py-2 pl-4 focus:outline-none bg-white rounded-[7px] w-full m-auto border border-gray-200 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-primary sm:text-sm sm:leading-6 p-3 placeholder:font-light placeholder:text-black leading-normal tracking-tight"
             />
             <p
               onClick={handleForgotPassword}
@@ -67,7 +59,7 @@ function SignIn() {
           </div>
           <button
             type="submit"
-            className="px-[88px] py-4 bg-primary rounded-xl hover:drop-shadow-xl hover:bg-dark text-white text-lg font-semibold"
+            className="w-full max-w-[227px] py-3 bg-primary rounded-xl hover:shadow-lg shadow-accentSecondary/30 transition delay-150 ease-in-out hover:scale-105 duration-300 hover:bg-dark text-white text-lg font-semibold"
           >
             Login
           </button>
