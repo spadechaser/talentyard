@@ -6,7 +6,7 @@ import { lexend } from "../localFont";
 
 export default function OnboardTechiePage() {
   return (
-    <main className={`${lexend.variable}`}>
+    <main className={`${lexend.className}`}>
       <div className='flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12'>
         <div className='w-full lg:w-[36%]'>
           <OnboardLeftSideBar />

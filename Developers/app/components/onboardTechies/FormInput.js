@@ -42,8 +42,8 @@ export default function DataInputSelection({ data }) {
                                         value={d}
                                     >
                                         {({ selected, active }) => (
-                                            <>
-                                                <span className={classNames(selected ? 'font-semibold' : 'font-light', 'block truncate')}>
+                                            <button disabled={d.id == 1}>
+                                                <span disabled={d.id === 1} className={classNames(selected ? 'font-semibold' : 'font-light', 'block truncate')}>
                                                     {d.name}
                                                 </span>
 
@@ -57,7 +57,7 @@ export default function DataInputSelection({ data }) {
                                                         <CheckIcon className="h-5 w-5" aria-hidden="true" />
                                                     </span>
                                                 ) : null}
-                                            </>
+                                            </button>
                                         )}
                                     </Listbox.Option>
                                 ))}

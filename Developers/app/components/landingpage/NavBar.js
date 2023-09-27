@@ -12,8 +12,8 @@ const user = {
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-    { name: 'Why Talentyard', href: '/why', current: false },
-    { name: 'About us', href: '/about', current: false },
+    // { name: 'Why Talentyard', href: '/why', current: false },
+    // { name: 'About us', href: '/about', current: false },
 ]
 const userNavigation = [
     { name: 'Your Profile', href: '/' },
@@ -79,12 +79,12 @@ export default function NavBar({ authenticated }) {
                                     </Link>
                                 </div>
                                 <div className="flex-shrink-0 hidden md:flex">
-                                    <button
-                                        type="button"
+                                    <Link
+                                        href={"/hire"}
                                         className="relative inline-flex items-center gap-x-1.5 rounded-md bg-primary px-3 py-2 text-base font-normal text-white shadow-sm hover:bg-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                     >
                                         Hire from Talentyard
-                                    </button>
+                                    </Link>
                                 </div>
                                 <div className="flex-shrink-0 hidden md:flex">
                                     <button

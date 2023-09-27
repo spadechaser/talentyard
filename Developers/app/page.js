@@ -28,10 +28,11 @@ export default function Home() {
       const threshold = 100;
 
       if (
-        scrollPosition > middleScrollPosition - threshold &&
-        scrollPosition < middleScrollPosition + threshold
+        scrollPosition > middleScrollPosition + threshold 
       ) {
         setShowHoverFrame(true);
+      }else{
+        setShowHoverFrame(false)
       }
     };
 
