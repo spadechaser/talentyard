@@ -8,6 +8,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <main className={`${lexend.variable} bg-gray-100`}>{children}</main>
+    <main className={`${lexend.className} bg-gray-100`}>{children}</main>
   );
 }
