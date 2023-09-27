@@ -1,12 +1,25 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import DataInputSelection from './FormInput'
 import { formattedCountries } from '@/app/composables/appdata/countries'
 import PasswordInput from './passwordBar'
 import { positions } from '@/app/composables/appdata/positions'
+import { useRouter } from 'next/navigation'
 
 export default function SignupForm() {
+  const router = useRouter()
+  const [formData, setFormData] = useState({
+    location: "",
+    position: "",
+    fullname: '',
+    email: ""
+  });
+  const submitForm = (e) => {
+    e.preventDefault()
+    router.push("/onboard/challenge")
+  }
   return (
-    <form className='w-full '>
+    <form onSubmit={submitForm} className='w-full '>
       <div className='flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6'>
         <div className='w-full lg:w-1/2 space-y-4'>
           <DataInputSelection data={formattedCountries} />
@@ -20,7 +33,7 @@ export default function SignupForm() {
         </div>
       </div>
       <div className='w-full mt-8 flex'>
-        <button className='w-full md:w-3/4 mx-auto bg-primary hover:bg-dark text-white p-3 rounded-lg hover:shadow-lg shadow-accentSecondary/30 transition delay-150 ease-in-out hover:scale-105 duration-300'>Apply to join TalentYard</button>
+        <button type="submit" className='w-full md:w-3/4 mx-auto bg-primary hover:bg-dark text-white p-3 rounded-lg hover:shadow-lg shadow-accentSecondary/30 transition delay-150 ease-in-out hover:scale-105 duration-300'>Apply to join TalentYard</button>
       </div>
     </form>
   )

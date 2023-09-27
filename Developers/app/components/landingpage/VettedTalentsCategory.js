@@ -12,17 +12,17 @@ export default function VettedTalentsCategory() {
                 <div className='w-full lg:w-1/3 bg-accentSecondary/30 min-h-[300px] border-r-[1px] border-black flex flex-col justify-start items-start p-6 text-left transition ease-in-out delay-100 hover:-translate-y-1 duration-300 hover:shadow-lg hover:cursor-pointer rounded-l-xl'>
                     <CommandLineIcon width={100} height={100} strokeWidth={0.5} />
                     <h3 className='text-2xl font-light'>Developers</h3>
-                    <p className='text-base font-extralight'>Nostrud ex cupidatat nulla culpa exercitation tempor elit. Sit ut enim velit excepteur minim dolore qui labore duis. Nisi fugiat ipsum nulla veniam sint excepteur cupidatat laboris ullamco.</p>
+                    <p className='text-base font-extralight'>Software engineers, coders, and architects with expertise across hundreds of technologies, tools, projects and industries.</p>
                 </div>
                 <div className='w-full lg:w-1/3 bg-accentSecondary/30 min-h-[300px] border-r-[0.5px] border-black flex flex-col justify-start items-start p-6 text-left transition ease-in-out delay-100 hover:-translate-y-1 duration-300 hover:shadow-lg hover:cursor-pointer'>
                     <PencilIcon width={100} height={100} strokeWidth={0.5} />
                     <h3 className='text-2xl font-extralight'>Designers</h3>
-                    <p className='text-base font-extralight'>Nostrud ex cupidatat nulla culpa exercitation tempor elit. Sit ut enim velit excepteur minim dolore qui labore duis. Nisi fugiat ipsum nulla veniam sint excepteur cupidatat laboris ullamco.</p>
+                    <p className='text-base font-extralight'>Highly skilled UI, UX, Visual, and Interaction designers, complemented by a diverse group of illustrators, animators, and more.</p>
                 </div>
                 <div className='w-full lg:w-1/3 bg-accentSecondary/30 min-h-[300px] border-l-[0.5px] border-black flex flex-col justify-start items-start p-6 text-left transition ease-in-out delay-100 hover:-translate-y-1 duration-300 hover:shadow-lg hover:cursor-pointer rounded-r-xl'>
                     <RectangleGroupIcon width={100} height={100} strokeWidth={0.5} />
-                    <h3 className='text-2xl font-extralight'>Talentyard Team</h3>
-                    <p className='text-base font-extralight'>Nostrud ex cupidatat nulla culpa exercitation tempor elit. Sit ut enim velit excepteur minim dolore qui labore duis. Nisi fugiat ipsum nulla veniam sint excepteur cupidatat laboris ullamco.</p>
+                    <h3 className='text-2xl font-extralight'>TalentYard Team</h3>
+                    <p className='text-base font-extralight'>TalenYard Consultants curate managed teams of experienced professionals to address your critical business requirements.</p>
                 </div>
             </div>
         </div>

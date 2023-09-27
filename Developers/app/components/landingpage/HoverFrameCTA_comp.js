@@ -55,8 +55,8 @@ export default function HoverFrameCTA({closeHoverFrame}) {
       <div className="bg-slate-100 flex-1 rounded-b-3xl">
         <div className=" flex items-center justify-center mx-5 mt-[27px]">
           <p className="text-center text-base font-light font-lexend">
-            Join the elite techies, and get access to job opportunities that fit
-            your profile and skill set.
+            Join the talent playground, and get access to work opportunities that fit
+            your expertise and work mode.
           </p>
         </div>
         <div className="flex items-center justify-center mt-[37px] mb-[28px]">

@@ -27,10 +27,10 @@ function classNames(...classes) {
 
 export default function NavBar({ authenticated }) {
     return (
-        <Disclosure as="nav" className="bg-neutral">
+        <Disclosure as="nav" className="bg-neutral snap-proximity snap-y relative">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 snap-center">
                         <div className="flex h-16 justify-between">
                             <div className="flex">
                                 <div className="-ml-2 mr-2 flex items-center md:hidden">
@@ -81,7 +81,7 @@ export default function NavBar({ authenticated }) {
                                 <div className="flex-shrink-0 hidden md:flex">
                                     <button
                                         type="button"
-                                        className="relative inline-flex items-center gap-x-1.5 rounded-md bg-primary px-3 py-2 text-base font-normal text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                        className="relative inline-flex items-center gap-x-1.5 rounded-md bg-primary px-3 py-2 text-base font-normal text-white shadow-sm hover:bg-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                     >
                                         Hire from Talentyard
                                     </button>
@@ -89,7 +89,7 @@ export default function NavBar({ authenticated }) {
                                 <div className="flex-shrink-0 hidden md:flex">
                                     <button
                                         type="button"
-                                        className="relative inline-flex items-center gap-x-1.5 rounded-md bg-neutral px-3 py-2 text-base font-normal text-black border-accent border-2 hover:bg-gray-200 hover:border-accentSecondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral"
+                                        className="relative inline-flex items-center gap-x-1.5 rounded-md bg-neutral px-3 py-2 text-base font-normal text-black border-accent border-2 hover:bg-accentSecondary/75 hover:border-accentSecondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral"
                                     >
                                         Schedule Call
                                     </button>

@@ -16,6 +16,7 @@ const lexend = Lexend({
 });
 export default function Home() {
   const [showHoverFrame, setShowHoverFrame] = useState(false);
+  const [isSeen, setIsSeen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,19 +42,21 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className={lexend.className}>
-      {showHoverFrame && <HoverFrameCTA closeHoverFrame={()=>{
+    <main className={`${lexend.className} snap-proximiy snap-mandatory snap-y scroll-smooth`}>
+      {showHoverFrame && !isSeen && <HoverFrameCTA closeHoverFrame={() => {
         setShowHoverFrame(false)
+        setIsSeen(true)
       }} />}
-      <NavBar />
-      <Hero />
-      <div className="mt-12 md:mt-0 z-10 relative">
-        <TalentPromptSearch />
+      <div className="snap-center">
+        <NavBar />
       </div>
-      <div className="mt-12 md:mt-24 z-10 relative">
+      <div className="snap-center">
+        <Hero />
+      </div>
+      <div className="mt-12 md:mt-0 z-10 relative snap-center">
         <Features />
       </div>
-      <div className="mt-12 md:mt-24 z-10 relative">
+      <div className="mt-12 md:mt-24 z-10 relative snap-center">
         <VettedTalentsCategory />
       </div>
       <Footer />
