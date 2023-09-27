@@ -18,7 +18,7 @@ export default function TalentPromptSearch() {
             <div className='w-full flex flex-col lg:flex-row space-y-4'>
                 <form className='rounded-large flex  w-full h-[80px] shadow-lg bg-neutral px-4 space-y-4'>
                     <div className='flex w-full items-center justify-between '>
-                        <input placeholder='What would you like to achieve?' value={prompt} onChange={setPrompt} className='flex w-3/4  lg:rounded-large bg-neutral focus:outline-none p-3 font-light caret-primary' />
+                        <input placeholder='What would you like to achieve?' value={prompt} onChange={setPrompt} className='flex w-[95%]  lg:rounded-large bg-neutral focus:outline-none p-3 font-light caret-primary' />
                         <button type='submit' className='hidden lg:block bg-black text-neutral hover:bg-gray-700 p-3 rounded-default transition ease-in-out delay-200 hover:scale-110 duration-300 animate-bounce hover:animate-none'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 -rotate-45">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
