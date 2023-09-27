@@ -45,12 +45,14 @@ export default function NavBar({ authenticated }) {
                                     </Disclosure.Button>
                                 </div>
                                 <div className="flex flex-shrink-0 items-center">
-                                    <Image
-                                        width={150}
-                                        height={120}
-                                        src={"/logo_small.png"}
-                                        alt="Talentyard"
-                                    />
+                                    <Link href='/'>
+                                        <Image
+                                            width={150}
+                                            height={120}
+                                            src={"/logo_small.png"}
+                                            alt="Talentyard"
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                                     {navigation.map((item) => (

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import HeroCardComp from '../HeroCardComp'
+import HeroCardComp from './HeroCardComp'
 import TalentPromptSearch from './TalentPromptSearch'
 
 export default function Hero() {
