@@ -1,17 +1,16 @@
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { appAuth } from "../firebase/config";
 
-const auth = getAuth();
-
-export const observeUserAuthState = (userCallback, errorCallBack) => {
-  onAuthStateChanged(
-    auth,
-    (user) => {
-      if (user) {
-        userCallback(user);
-      } else {
-        userCallback(null);
-      }
-    },
-    (error) => errorCallBack("observeUserAuthState: ", error)
-  );
-};
+export async function setPersist() {
+  try {
+    const currentUser = appAuth().currentUser;
+    if (currentUser) {
+      await appAuth().setPersistence(appAuth.Auth.Persistence.SESSION);
+      return "Persistence set to SESSION.";
+    }
+    return "No user is signed in.";
+  } catch (error) {
+    throw new Error(
+      `An error occurred while setting persistence: ${error.message}`
+    );
+  }
+}
